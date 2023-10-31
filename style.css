@@ -61,7 +61,8 @@ body {
     text-transform: uppercase;
 
 }
-.link:hover{
+
+.link:hover {
     border-bottom: 3px solid;
     border-right: 3px solid;
     background: purple;
@@ -70,6 +71,7 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 5px rgb(80, 2, 80);
 }
+
 .body {
 
     background: rgb(115, 4, 115);
@@ -128,15 +130,17 @@ body {
 
 .form {
     background: rgb(162, 4, 109);
-    width: fit-content;
-    height: 356px;
+    width: 40%;
+
     padding: 5px 5px 0px 5px;
+
 }
 
 table {
-    width: 410px;
+    width: 100%;
     background: white;
-    padding: 10px;
+    padding: 6px 25px 40px 6px;
+    border-radius: 5px;
 
 }
 
@@ -161,8 +165,8 @@ input[type="text"] {
 }
 
 .image {
-    width: 520px;
-    height: 350px;
+    width: 50%;
+    /* height: 350px; */
 }
 
 .fc-app {
@@ -171,8 +175,7 @@ input[type="text"] {
 
 .wo {
     background: pink;
-    height: 360px;
-    width: 419px;
+    width: 40%;
     padding: 0px 10px 0px 10px;
 
 }
@@ -216,10 +219,10 @@ input[type="text"] {
 .mae {
     display: flex;
 
-    width: 57%;
+    width: 60%;
 
 
-    margin: 20px 89px 0px 0px;
+    margin: 4% 6% 0% 0%;
     border: 1px solid;
 
 }
@@ -233,10 +236,10 @@ input[type="text"] {
 }
 
 .marko {
-    width: 120px;
+    width: 23%;
     background: orange;
     justify-content: center;
-    padding: 42px 20px 20px 20px;
+    padding: 5% 7% 5% 1%;
 
 
 }
@@ -264,20 +267,26 @@ input[type="text"] {
     background: none;
 }
 
-.mark {
-    width: 25%;
+.mark,
+.mar,
+.ma {
+    width: 43%;
 }
 
 .mark,
 .mar,
 .ma {
-    margin-right: 40px;
-    margin-top: 10px;
+    margin-right: 0%;
+    margin-top: 2%;
+}
+
+.mae li {
+    list-style-type: disc;
 }
 
 .bot {
     text-decoration: none;
-    color: rgb(22, 77, 107);
+    color: rgb(29, 127, 213);
 }
 
 .icon {
@@ -291,6 +300,10 @@ input[type="text"] {
     align-items: center;
     margin: 0px 100px 0px 0px;
     width: fit-content;
+}
+
+.ics h3 {
+    color: rgb(29, 127, 213);
 }
 
 .fa-brands {
