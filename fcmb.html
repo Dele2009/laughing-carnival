@@ -4,50 +4,709 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCMB</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            padding: 115px 0px 0px 0px;
+            overflow-x: hidden;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        }
+
+        .max {
+            background: black;
+            color: white;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .img1 {
+            width: 100px;
+
+        }
+
+        .img1 img {
+            width: 100%;
+
+        }
+
+        .links {
+            padding-top: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: purple;
+            text-transform: uppercase;
+
+        }
+
+        .links a:hover {
+            border-bottom: 3px solid;
+            border-right: 3px solid;
+            background: purple;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px rgb(80, 2, 80);
+
+        }
+
+        .ol {
+            width: 300px;
+            margin: 10px 0px 0px 0px;
+            /* background: yellow; */
+            border-left: 5px solid orange;
+            text-align: left;
+        }
+
+        .plo {
+            background: purple;
+            padding-left: 120px;
+
+        }
+
+        .plo .row {
+            padding: 0;
+        }
+
+        .kg {
+            background: orange;
+            width: fit-content;
+            padding: 10px 10px 0px 0px;
+
+
+        }
+
+        .fa-solid {
+            height: fit-content;
+            width: fit-content;
+            padding: 6px;
+            border: none;
+            border-radius: 20px;
+            font-size: 18px;
+            background: white;
+            margin: 0;
+
+
+        }
+
+        .pok .row {
+            text-align: left;
+        }
+
+        .mar {
+            width: 600px;
+
+            padding: 0;
+        }
+
+        .trac .row {
+            height: 40px;
+        }
+
+        .form {
+            background: rgb(162, 4, 109);
+            width: 30%;
+
+            padding: 5px 5px 0px 5px;
+        }
+
+        table {
+            width: 100%;
+            background: white;
+            padding: 6px 25px 40px 6px;
+            border-radius: 5px;
+            text-align: left;
+
+        }
+
+        input[type="text"] {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid;
+
+        }
+
+        .bt {
+            padding: 15px 25px;
+            margin-top: 20px;
+            background: orange;
+            border: 2px solid;
+            border-radius: 4px;
+        }
+
+        .link2 {
+            text-decoration: none;
+            color: rgb(71, 192, 233);
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .fc-app {
+            width: fit-content;
+        }
+
+        .wo {
+            background: pink;
+            text-align: left;
+            width: 30%;
+
+            padding: 0px 10px 0px 10px;
+
+        }
+
+        .wo p {
+            font-size: 14px;
+        }
+
+
+
+        .nk {
+            font-size: 20px;
+            font-weight: 1500;
+        }
+
+        .fa-lock {
+            font-size: 35px;
+            margin: 0px 0px 0px 40px;
+        }
+
+        .bu {
+            margin: 0px 0px 0px 230px;
+            background: orange;
+            padding: 3px 10px;
+            border: 2px solid;
+            border-radius: 4px;
+        }
+
+        .rowk {
+            width: 70%;
+            height: auto;
+            margin: 2% 0% 0% 30%;
+
+        }
+
+        .mae {}
+
+        .map {
+            background: none;
+            color: rgb(170, 146, 8);
+            width: fit-content;
+            text-align: center;
+            /* margin: 0px 0px 0px 350px; */
+        }
+
+        .marko {
+            width: fit-content-3.3;
+            background: orange;
+            justify-content: center;
+            padding: 70px 0px 0px 70px;
+
+
+        }
+
+        .p9 {
+            text-align: left;
+            width: fit-content;
+        }
+
+        .mut {
+            width: 40px;
+            margin: 0px 0px 0px 25px;
+        }
+
+        .rat {
+            width: 60px;
+        }
+
+        .rot {
+            width: 50px;
+        }
+
+        .kat {
+            width: 100%;
+            background: none;
+        }
+
+        .mark,
+        .mar,
+        .ma {
+            width: 43%;
+        }
+
+        .mark,
+        .mar,
+        .ma {
+            margin-right: 0%;
+            margin-top: 2%;
+        }
+
+        .mae li {
+            list-style-type: disc;
+        }
+
+        .bot {
+            text-decoration: none;
+            color: rgb(29, 127, 213);
+        }
+
+        .icon {
+          width: 100%   ;  
+        }
+
+        .ics {
+           
+            margin: 0px 100px 0px 0px;
+            width: 100%;
+        }
+
+        .ics h3 {
+            color: rgb(29, 127, 213);
+        }
+
+        .fa-brands {
+            font-size: 40px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .fa-comments {
+            color: blue;
+            margin: 0px 0px 0px 50px;
+            font-size: 35px;
+        }
+
+        .fa-facebook {
+            background: white;
+            color: rgb(49, 49, 175);
+        }
+
+        .fa-twitter {
+            color: rgb(33, 177, 200);
+        }
+
+        .fa-linkedin {
+            color: rgb(4, 74, 161);
+        }
+
+        .fa-youtube {
+            color: red;
+        }
+
+        .fa-google {
+            color: blue;
+        }
+
+        .down {
+            background: rgb(32, 31, 31);
+            margin-top: 40px;
+            position: absolute;
+            top: 200%;
+            bottom: 0px;
+            width: 100%;
+
+            padding: 10px 40px 10px 40px;
+        }
+
+        .info {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+        }
+
+
+
+
+        @media screen and (max-width:768px) {
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                padding: 125px 0px 0px 0px;
+                overflow-x: hidden;
+                /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            }
+
+            .img1 {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+
+            }
+
+            .img1 img {
+                width: 100%;
+                margin: 0;
+
+            }
+
+            .links {}
+
+            .links a {
+                text-decoration: none;
+                color: purple;
+            }
+
+            .links a:hover {
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                background: purple;
+                color: white;
+                padding: 2.5px 5px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 5px rgb(80, 2, 80);
+                margin: 0;
+            }
+
+            .links .row {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                font-size: 7px;
+                font-weight: bolder;
+                text-transform: uppercase;
+                padding: 20px 0px;
+            }
+
+            .plo {
+                padding: 0px 0px;
+
+            }
+
+            .kg {
+                background: orange;
+                width: 100%;
+                padding: 10px 0px 0px 0px;
+
+
+
+
+
+            }
+
+            .lm {
+                visibility: hidden;
+                position: absolute;
+            }
+
+            .fa-lock {
+                margin: 0;
+            }
+
+            .trac .row {
+                display: block;
+            }
+
+            .lm {
+                visibility: hidden;
+                position: absolute;
+            }
+
+            .form {
+                margin: auto;
+                width: 95%;
+                padding-bottom: 40px;
+
+            }
+
+            table {
+                margin: auto;
+                background: white;
+                padding: 20px;
+                border-radius: 5px;
+                text-align: left;
+                width: 100%;
+
+            }
+
+            .image {
+                margin-top: 10px;
+                width: 100%;
+
+            }
+
+            .fc-app {
+
+                margin: auto;
+                width: 100%;
+            }
+
+            .wo {
+                background: pink;
+                text-align: center;
+
+                padding: 20px 10px;
+                margin: auto;
+                width: 100%;
+
+            }
+
+            .wo p {
+                font-size: 14px;
+            }
+
+
+
+            .nk {
+                font-size: 20px;
+                font-weight: 1500;
+            }
+
+            .fa-lock {
+                font-size: 35px;
+                margin: auto;
+            }
+
+            .bu {
+                margin: auto;
+                background: orange;
+                padding: 3px 10px;
+                border: 2px solid;
+                border-radius: 4px;
+            }
+
+            .rowk {
+                width: fit-content;
+                height: auto;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(4, );
+                padding: 0;
+
+
+            }
+
+            .mae {}
+
+            .map {
+                background: none;
+                color: rgb(170, 146, 8);
+                width: fit-content;
+                text-align: center;
+                /* margin: 0px 0px 0px 350px; */
+            }
+
+            .marko {
+                width: 100%;
+                background: orange;
+                justify-content: center;
+                padding: 0px 0px 0px 0px;
+                margin: auto;
+
+
+            }
+
+            .p9 {
+                text-align: center;
+                width: 100%;
+            }
+
+            .mut {
+                width: 40px;
+
+                margin: auto;
+            }
+
+            .rat {
+                width: 60px;
+
+            }
+
+            .rot {
+                width: 50px;
+            }
+
+            .kat {
+                width: 100%;
+                background: none;
+            }
+
+            .mark,
+            .mar,
+            .ma {
+                width: 100%;
+            }
+
+            .mark,
+            .mar,
+            .ma {
+                margin-right: 0%;
+                margin-top: 2%;
+            }
+
+            .mae li {
+                list-style-type: disc;
+
+            }
+
+            .bot {
+                text-decoration: none;
+                color: rgb(29, 127, 213);
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .icon {
+                display: grid;
+                width: fit-content;
+
+            }
+
+            .ics {
+                /* display: flex;
+                align-items: center; */
+                margin: 0px 100px 0px 0px;
+                /* width: 90%; */
+                /* display: grid;
+                grid-template-columns: repeat(7, 1fr); */
+
+            }
+
+           
+
+            .ics h3 {
+                color: rgb(29, 127, 213);
+            }
+
+            .fa-brands {
+                font-size: 40px;
+                margin: 0px 15px 0px 0px;
+            }
+
+            .fa-comments {
+                color: blue;
+                margin: 0px 10px 0px 50px;
+                font-size: 35px;
+            }
+
+            .fa-facebook {
+                background: white;
+                color: rgb(49, 49, 175);
+            }
+
+            .fa-twitter {
+                color: rgb(33, 177, 200);
+            }
+
+            .fa-linkedin {
+                color: rgb(4, 74, 161);
+            }
+
+            .fa-youtube {
+                color: red;
+            }
+
+            .fa-google {
+                color: blue;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
+    <!-- <div class="down">
+        <div class="info">
+            This site ensures that all infomation sent to us via the the World Wide Web are
+            encryted. You can confirm
+            the infomation provided by the padlock icon on your address bar. 2019 &copy; Fisrt city
+            monument bank plc. A
+            Member of First city <br>Groups
+        </div>
+    </div> -->
+
+
     <div class="max">
         <h1 class="toe"> CAVEAT: This is a student's project and not any sort of attempt to clone the existing webpage
 
         </h1>
     </div>
-    <nav class="nav">
-        <div class="imgdiv">
-            <img src="FCMB_Logo.png" alt="" class="FCLogo">
-        </div>
-        <ul class="lidiv">
-            <li class="li-s"><a href="index.html" class="link">home</a></li>
-            <li class="li-s"><a href="bizg.html" class="link">about</a></li>
-            <li class="li-s"><a href="fcmb.html" class="link">services</a></li>
-            <li class="li-s"><a href="d'scodes.html" class="link">contact us</a></li>
-            <li class="li-s"><a href="bridge.html" class="link">products</a></li>
-            <li class="li-s"><a href="pixelgrade.html" class="link">our mission</a></li>
-            <li class="li-s"><a href="Whogohost.html" class="link">feedback</a></li>
 
-        </ul>
-    </nav>
-    <div class="body">
-        <div class="in">
-            <i class="fa-solid fa-lock"></i>
-            <h2 class="mk">Online Business Banking</h2>
+
+    <div class="  text-center">
+        <div class="row">
+            <div class="col-md-1 img1">
+                <img src="FCMB_Logo.png" alt="">
+
+            </div>
+            <div class="col-md-11 links">
+                <div class="row">
+                    <div class="col-md"><a href="index.html">home</a></div>
+                    <div class="col-md"><a href="bizg.html">about</a></div>
+                    <div class="col-md"><a href="fcmb.html">services</a></div>
+                    <div class="col-md"><a href="d'scodes.html">help</a></div>
+                    <div class="col-md"><a href="bridge.html">products</a></div>
+                    <div class="col-md"><a href="pixelgrade.html">mission</a></div>
+                    <div class="col-md"><a href="Whogohost.html">feedback</a></div>
+                </div>
+
+            </div>
+
         </div>
+    </div>
+
+
+
+    <div class=" text-center plo">
+        <div class="text-center">
+            <div class="row">
+                <div class="col-md-10 kg">
+
+                    <h5> <i class="fa-solid fa-lock"></i> online Business banking</h5>
+
+                </div>
+                <div class="col-md-1 lm">
+
+                </div>
+                <div class="col-md-1 lm">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class=" container text-center">
+        <div class="row">
+            <div class="col-md-3  ol">
+                <p>Welcome To</p>
+                <h1>FCMB Online</h1>
+            </div>
+            <div class="col-md-9">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container text-center pok">
+
+        <div class="row">
+            <div class="col-md-1 mar">Your User ID and password are confidential NEVER Disclose them to anyone.
+            </div>
+            <div class="col-md-11 kar"></div>
+        </div>
+
 
     </div>
-    <div class="ol">
-        <p class="wt">Welcome To </p>
-        <h1>FCMB Online</h1>
 
-
-    </div>
-    <div class="main">
-        <p class="ot">Your User Id and Password are confidential NEVER disclose them to anyone</p>
-        <div class="boxs">
-            <div class="form">
+    <div class="container text-center trac">
+        <div class="row">
+            <div class="col-md form">
                 <table>
                     <tr>
                         <td>Login Name</td>
@@ -75,15 +734,13 @@
                     </tr>
                 </table>
             </div>
-            <div class="image">
+            <div class="col-md image">
                 <img src="FCMB-APP.jpg" alt="" class="fc-app">
-
-            </div><br><br><br><br>
-            <br><br>
-
-            <div class="wo">
+            </div>
+            <div class="col-md wo">
                 <p>Having Trouble <i>Signing in?</i><br>
-                    Call us or send us an email</p>
+                    Call us or send us an email
+                </p>
 
                 <p>
                     Email: customerservice@fcmb.com
@@ -108,67 +765,69 @@
                 <button class="bu">
                     FIND OUT MORE
                 </button>
-
             </div>
 
+            <div class=" text-center rowk">
+                <div class="row mae">
+                    <div class="col-md marko">
+                        <p class="p9">
+                            Putting your <br> banking neeeds <br>first
+                        </p>
+                    </div>
+                    <div class="col-md ma">
+                        <div class="mut"><img src="house icon.jfif" alt="" class="kat"></div>
+                        <ul>
+                            <li><a href="" class="bot">Where to find a branch</a></li>
+                            <li><a href="" class="bot">Where to find ATM</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md mar">
+                        <div class="mut rat"><img src="mouse icon.jfif" alt="" class="kat"></div>
+                        <ul>
+                            <li><a href="" class="bot">Open an account online</a></li>
+                            <li><a href="" class="bot">make payment once</a></li>
+                            <li><a href="" class="bot">E-commerce</a></li>
+                            <li><a href="" class="bot">How to use the internet banking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md ma">
+                        <div class="mut rot"><img src="tele icon.jfif" alt="" class="kat"></div>
+                        <ul>
+                            <li><a href="" class="bot">Telephone Banking</a></li>
+                            <li><a href="" class="bot">Send us feedback by mail</a></li>
+                        </ul>
+                    </div>
 
+
+                    <div class="container text-center icon">
+                        <div class="row ics">
+                            <div class="col-md-4">
+                                <h3>Connect with us:</h3>
+                            </div>
+                            <div class="col"><i class="fa-solid fa-comments"></i></div>
+                            <div class="col"><i class="fa-brands fa-facebook"></i></div>
+                            <div class="col"><i class="fa-brands fa-twitter"></i></div>
+                            <div class="col"><i class="fa-brands fa-linkedin"></i></div>
+                            <div class="col"><i class="fa-brands fa-youtube"></i></div>
+                            <div class="col"><i class="fa-brands fa-google"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
 
 
         </div>
 
-    </div> <br><br><br><br><br>
 
-    <div class="row">
-        <div class="mae">
-            <div class="marko">
-                <p class="p9">
-                    Putting your banking neeeds first
-                </p>
-            </div>
-            <div class="mark">
-                <div class="mut"><img src="house icon.jfif" alt="" class="kat"></div>
-                <ul>
-                    <li><a href="" class="bot">Where to find a branch</a></li>
-                    <li><a href="" class="bot">Where to find ATM</a></li>
-                </ul>
-            </div>
-            <div class="mar">
-                <div class="mut rat"><img src="mouse icon.jfif" alt="" class="kat"></div>
-                <ul>
-                    <li><a href="" class="bot">Open an account online</a></li>
-                    <li><a href="" class="bot">make payment once</a></li>
-                    <li><a href="" class="bot">E-commerce</a></li>
-                    <li><a href="" class="bot">How to use the internet banking</a></li>
-                </ul>
-            </div>
-            <div class="ma">
-                <div class="mut rot"><img src="tele icon.jfif" alt="" class="kat"></div>
-                <ul>
-                    <li><a href="" class="bot">Telephone Banking</a></li>
-                    <li><a href="" class="bot">Send us feedback by mail</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="icon">
-        <div class="ics">
-            <h3>Connect with us:</h3>
-            <i class="fa-solid fa-comments"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-google"></i>
-        </div>
-    </div>
 
-    <div class="down">
-        <div class="info">
-            This site ensures that all infomation sent to us via the the World Wide Web are encryted. You can confirm
-            the infomation provided by the padlock icon on your address bar. 2019 &copy; Fisrt city monument bank plc. A
-            Member of First city <br>Groups
-        </div>
-    </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
